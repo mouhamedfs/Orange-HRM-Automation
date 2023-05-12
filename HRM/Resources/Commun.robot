@@ -10,3 +10,6 @@ Open HRM Browser
 
 Closing Browser
     close all browsers
+
+Log to console 
+    log     This is a log
