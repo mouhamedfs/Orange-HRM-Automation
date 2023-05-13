@@ -2,6 +2,7 @@
 Resource           ../Resources/Commun.robot
 Resource           ../Data/Data.robot
 Resource           ../Resources/HrmLogic.robot
+Resource           ../Administration/AdminLogic.robot
 
 Test Teardown       Closing Browser
 

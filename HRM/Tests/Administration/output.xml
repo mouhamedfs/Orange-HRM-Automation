@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.6 on win32)" generated="20230513 01:31:41.608" rpa="false" schemaversion="3">
+<suite id="s1" name="AdminLogic" source="C:\Users\Mouhamed Famara SANE\Desktop\Automated\Orange-HRM-Automation-main\Orange-HRM-Automation\HRM\Tests\Administration\AdminLogic.robot">
+<test id="s1-t1" name="Test" line="20">
+<kw name="Search User into Administration Page">
+<arg>${USER}</arg>
+<kw name="Connexion" library="HrmLogic">
+<arg>${VALID_CREDENTIALS.username}</arg>
+<arg>${VALID_CREDENTIALS.password}</arg>
+<kw name="Open HRM Browser" library="Commun">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230513 01:31:41.931" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg timestamp="20230513 01:31:41.951" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230513 01:31:41.929" endtime="20230513 01:31:48.892"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230513 01:31:48.892" endtime="20230513 01:31:49.026"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230513 01:31:52.030" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230513 01:31:49.027" endtime="20230513 01:31:52.030"/>
+</kw>
+<status status="PASS" starttime="20230513 01:31:41.929" endtime="20230513 01:31:52.030"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "Username")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230513 01:31:52.031" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
+<status status="PASS" starttime="20230513 01:31:52.030" endtime="20230513 01:31:52.115"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230513 01:31:52.117" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230513 01:31:52.116" endtime="20230513 01:31:52.281"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230513 01:31:52.282" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
+<status status="PASS" starttime="20230513 01:31:52.281" endtime="20230513 01:31:52.457"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230513 01:31:55.471" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230513 01:31:52.457" endtime="20230513 01:31:55.471"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230513 01:31:55.471" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20230513 01:31:55.471" endtime="20230513 01:31:55.539"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230513 01:31:58.548" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230513 01:31:55.539" endtime="20230513 01:31:58.549"/>
+</kw>
+<status status="PASS" starttime="20230513 01:31:41.927" endtime="20230513 01:31:58.549"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//a[@href="/web/index.php/admin/viewAdminModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230513 01:31:58.551" level="INFO">Clicking link 'xpath=//a[@href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<status status="PASS" starttime="20230513 01:31:58.550" endtime="20230513 01:31:59.653"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230513 01:32:02.668" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230513 01:31:59.653" endtime="20230513 01:32:02.668"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input</arg>
+<arg>${USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230513 01:32:02.671" level="INFO">Typing text 'Ehioze.Ebo' into text field 'xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230513 01:32:02.669" endtime="20230513 01:32:02.833"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230513 01:32:05.835" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230513 01:32:02.833" endtime="20230513 01:32:05.835"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230513 01:32:05.836" level="INFO">Clicking element 'xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230513 01:32:05.835" endtime="20230513 01:32:05.906"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230513 01:32:10.922" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230513 01:32:05.906" endtime="20230513 01:32:10.922"/>
+</kw>
+<status status="PASS" starttime="20230513 01:31:41.926" endtime="20230513 01:32:10.922"/>
+</kw>
+<kw name="Verification Page" library="HrmLogic">
+<arg>${USER}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230513 01:32:10.945" level="INFO">Current page contains text 'Ehioze.Ebo'.</msg>
+<status status="PASS" starttime="20230513 01:32:10.924" endtime="20230513 01:32:10.946"/>
+</kw>
+<status status="PASS" starttime="20230513 01:32:10.923" endtime="20230513 01:32:10.946"/>
+</kw>
+<status status="PASS" starttime="20230513 01:31:41.925" endtime="20230513 01:32:10.946"/>
+</test>
+<status status="PASS" starttime="20230513 01:31:41.611" endtime="20230513 01:32:10.948"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AdminLogic">AdminLogic</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
