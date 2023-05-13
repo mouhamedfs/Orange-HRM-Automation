@@ -15,3 +15,8 @@ Connexion with invalid password
     [Tags]      invalid
     Connexion       ${INVALID_CREDENTIALS.username}       ${INVALID_CREDENTIALS.password}
     Verification Page       ${InvalidElement}
+
+Loggout Successfull
+    [Tags]      decon
+    Connexion       ${VALID_CREDENTIALS.username}       ${VALID_CREDENTIALS.password}
+    Deconnexion

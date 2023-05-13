@@ -17,3 +17,8 @@ Connexion
 Verification Page
     [Arguments]    ${Element}
     Page Should Contain     ${Element}
+
+Deconnexion
+    Click Element       class=oxd-userdropdown-name
+    Click link          Logout
+    Sleep       3
