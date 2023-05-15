@@ -5,3 +5,6 @@ ${URL}      https://opensource-demo.orangehrmlive.com/
 &{INVALID_CREDENTIALS}    username=Admin      password=adminSs
 ${InvalidElement}       Invalid credentials
 ${USER}     Ehioze.Ebo
+${USER_ID}
+${PASSWORD}     Sane1995***
+${ROLE}     Linda Jane Anderson
