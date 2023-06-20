@@ -5,7 +5,6 @@ Resource           ../Resources/HrmLogic.robot
 Resource           Administration/AdminLogic.robot
 
 Test Teardown       Closing Browser
-
 *** Test Cases ***
 Connexion Successfull
     [Tags]      valid

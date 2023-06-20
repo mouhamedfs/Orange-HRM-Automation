@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20230609 23:38:31.271" rpa="false" schemaversion="3">
-<suite id="s1" name="Hrm" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests\Hrm.robot">
-<test id="s1-t1" name="Connexion Successfull" line="10">
+<robot generator="Robot 6.1 (Python 3.7.7 on win32)" generated="20230620 21:04:15.772" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests">
+<suite id="s1-s1" name="Hrm" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests\Hrm.robot">
+<test id="s1-s1-t1" name="Connexion Successfull" line="9">
 <kw name="Connexion" library="HrmLogic">
 <arg>${VALID_CREDENTIALS.username}</arg>
 <arg>${VALID_CREDENTIALS.password}</arg>
@@ -12,72 +13,72 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230609 23:38:31.674" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20230609 23:38:31.674" endtime="20230609 23:38:55.566"/>
+<msg timestamp="20230620 21:04:16.404" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230620 21:04:16.395" endtime="20230620 21:04:33.765"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230609 23:38:55.566" endtime="20230609 23:38:55.686"/>
+<status status="PASS" starttime="20230620 21:04:33.766" endtime="20230620 21:04:33.887"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:38:58.687" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:38:55.686" endtime="20230609 23:38:58.687"/>
+<msg timestamp="20230620 21:04:36.890" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:04:33.887" endtime="20230620 21:04:36.890"/>
 </kw>
-<status status="PASS" starttime="20230609 23:38:31.674" endtime="20230609 23:38:58.687"/>
+<status status="PASS" starttime="20230620 21:04:16.395" endtime="20230620 21:04:36.890"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "Username")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:38:58.687" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
-<status status="PASS" starttime="20230609 23:38:58.687" endtime="20230609 23:38:58.768"/>
+<msg timestamp="20230620 21:04:36.893" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
+<status status="PASS" starttime="20230620 21:04:36.890" endtime="20230620 21:04:36.990"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:38:58.773" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20230609 23:38:58.773" endtime="20230609 23:38:58.963"/>
+<msg timestamp="20230620 21:04:36.995" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230620 21:04:36.993" endtime="20230620 21:04:37.182"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:38:58.963" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
-<status status="PASS" starttime="20230609 23:38:58.963" endtime="20230609 23:38:59.130"/>
+<msg timestamp="20230620 21:04:37.185" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
+<status status="PASS" starttime="20230620 21:04:37.185" endtime="20230620 21:04:37.349"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:39:02.131" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:38:59.130" endtime="20230609 23:39:02.131"/>
+<msg timestamp="20230620 21:04:40.360" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:04:37.349" endtime="20230620 21:04:40.360"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:39:02.131" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20230609 23:39:02.131" endtime="20230609 23:39:04.086"/>
+<msg timestamp="20230620 21:04:40.360" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20230620 21:04:40.360" endtime="20230620 21:04:41.915"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:39:07.086" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:39:04.086" endtime="20230609 23:39:07.086"/>
+<msg timestamp="20230620 21:04:44.929" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:04:41.915" endtime="20230620 21:04:44.929"/>
 </kw>
-<status status="PASS" starttime="20230609 23:38:31.674" endtime="20230609 23:39:07.086"/>
+<status status="PASS" starttime="20230620 21:04:16.395" endtime="20230620 21:04:44.929"/>
 </kw>
 <kw name="Closing Browser" library="Commun" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230609 23:39:07.086" endtime="20230609 23:39:13.454"/>
+<status status="PASS" starttime="20230620 21:04:44.929" endtime="20230620 21:04:51.289"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:07.086" endtime="20230609 23:39:13.454"/>
+<status status="PASS" starttime="20230620 21:04:44.929" endtime="20230620 21:04:51.289"/>
 </kw>
 <tag>valid</tag>
-<status status="PASS" starttime="20230609 23:38:31.672" endtime="20230609 23:39:13.454"/>
+<status status="PASS" starttime="20230620 21:04:16.395" endtime="20230620 21:04:51.289"/>
 </test>
-<test id="s1-t2" name="Connexion with invalid password" line="15">
+<test id="s1-s1-t2" name="Connexion with invalid password" line="14">
 <kw name="Connexion" library="HrmLogic">
 <arg>${INVALID_CREDENTIALS.username}</arg>
 <arg>${INVALID_CREDENTIALS.password}</arg>
@@ -88,82 +89,158 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230609 23:39:13.463" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20230609 23:39:13.461" endtime="20230609 23:39:37.554"/>
+<msg timestamp="20230620 21:04:51.299" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230620 21:04:51.299" endtime="20230620 21:05:05.087"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230609 23:39:37.554" endtime="20230609 23:39:37.678"/>
+<status status="PASS" starttime="20230620 21:05:05.087" endtime="20230620 21:05:05.213"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:39:40.680" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:39:37.680" endtime="20230609 23:39:40.680"/>
+<msg timestamp="20230620 21:05:08.215" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:05.213" endtime="20230620 21:05:08.215"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:13.461" endtime="20230609 23:39:40.680"/>
+<status status="PASS" starttime="20230620 21:04:51.289" endtime="20230620 21:05:08.217"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "Username")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:39:40.680" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
-<status status="PASS" starttime="20230609 23:39:40.680" endtime="20230609 23:39:40.787"/>
+<msg timestamp="20230620 21:05:08.219" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
+<status status="PASS" starttime="20230620 21:05:08.217" endtime="20230620 21:05:08.320"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:39:40.788" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20230609 23:39:40.787" endtime="20230609 23:39:40.959"/>
+<msg timestamp="20230620 21:05:08.323" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230620 21:05:08.320" endtime="20230620 21:05:08.530"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:39:40.959" level="INFO">Typing text 'adminSs' into text field 'password'.</msg>
-<status status="PASS" starttime="20230609 23:39:40.959" endtime="20230609 23:39:41.121"/>
+<msg timestamp="20230620 21:05:08.530" level="INFO">Typing text 'adminSs' into text field 'password'.</msg>
+<status status="PASS" starttime="20230620 21:05:08.530" endtime="20230620 21:05:08.714"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:39:44.122" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:39:41.121" endtime="20230609 23:39:44.122"/>
+<msg timestamp="20230620 21:05:11.729" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:08.714" endtime="20230620 21:05:11.729"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:39:44.122" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20230609 23:39:44.122" endtime="20230609 23:39:45.147"/>
+<msg timestamp="20230620 21:05:11.729" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20230620 21:05:11.729" endtime="20230620 21:05:12.760"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:39:48.150" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:39:45.148" endtime="20230609 23:39:48.150"/>
+<msg timestamp="20230620 21:05:15.775" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:12.762" endtime="20230620 21:05:15.775"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:13.458" endtime="20230609 23:39:48.150"/>
+<status status="PASS" starttime="20230620 21:04:51.289" endtime="20230620 21:05:15.775"/>
 </kw>
 <kw name="Verification Page" library="HrmLogic">
 <arg>${InvalidElement}</arg>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230609 23:39:48.173" level="INFO">Current page contains text 'Invalid credentials'.</msg>
-<status status="PASS" starttime="20230609 23:39:48.152" endtime="20230609 23:39:48.173"/>
+<msg timestamp="20230620 21:05:15.794" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<msg timestamp="20230620 21:05:15.794" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<status status="FAIL" starttime="20230620 21:05:15.775" endtime="20230620 21:05:15.896"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:48.150" endtime="20230609 23:39:48.173"/>
+<status status="FAIL" starttime="20230620 21:05:15.775" endtime="20230620 21:05:15.901"/>
 </kw>
 <kw name="Closing Browser" library="Commun" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230609 23:39:48.173" endtime="20230609 23:39:54.562"/>
+<status status="PASS" starttime="20230620 21:05:15.902" endtime="20230620 21:05:18.069"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:48.173" endtime="20230609 23:39:54.562"/>
+<status status="PASS" starttime="20230620 21:05:15.902" endtime="20230620 21:05:18.070"/>
 </kw>
 <tag>invalid</tag>
-<status status="PASS" starttime="20230609 23:39:13.458" endtime="20230609 23:39:54.562"/>
+<status status="FAIL" starttime="20230620 21:04:51.289" endtime="20230620 21:05:18.070">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</status>
 </test>
-<test id="s1-t3" name="Loggout Successfull" line="20">
+<test id="s1-s1-t3" name="Loggout Successfull" line="19">
 <kw name="Connexion" library="HrmLogic">
 <arg>${VALID_CREDENTIALS.username}</arg>
 <arg>${VALID_CREDENTIALS.password}</arg>
@@ -174,93 +251,145 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230609 23:39:54.569" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20230609 23:39:54.569" endtime="20230609 23:40:16.234"/>
+<msg timestamp="20230620 21:05:18.079" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230620 21:05:18.077" endtime="20230620 21:05:20.696"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230609 23:40:16.234" endtime="20230609 23:40:16.359"/>
+<msg timestamp="20230620 21:05:20.717" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<msg timestamp="20230620 21:05:20.719" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<status status="FAIL" starttime="20230620 21:05:20.696" endtime="20230620 21:05:20.727"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:40:19.359" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:40:16.359" endtime="20230609 23:40:19.359"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.727" endtime="20230620 21:05:20.727"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:54.569" endtime="20230609 23:40:19.359"/>
+<status status="FAIL" starttime="20230620 21:05:18.076" endtime="20230620 21:05:20.727"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "Username")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:19.360" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
-<status status="PASS" starttime="20230609 23:40:19.359" endtime="20230609 23:40:19.447"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.727" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:19.447" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20230609 23:40:19.447" endtime="20230609 23:40:19.620"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.732" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:19.623" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
-<status status="PASS" starttime="20230609 23:40:19.620" endtime="20230609 23:40:19.792"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.732" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:40:22.792" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:40:19.792" endtime="20230609 23:40:22.792"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.732" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:22.792" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20230609 23:40:22.792" endtime="20230609 23:40:24.009"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.732" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:40:27.010" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:40:24.009" endtime="20230609 23:40:27.010"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.732" endtime="20230620 21:05:20.732"/>
 </kw>
-<status status="PASS" starttime="20230609 23:39:54.566" endtime="20230609 23:40:27.010"/>
+<status status="FAIL" starttime="20230620 21:05:18.073" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Deconnexion" library="HrmLogic">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=oxd-userdropdown-name</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:27.011" level="INFO">Clicking element 'class=oxd-userdropdown-name'.</msg>
-<status status="PASS" starttime="20230609 23:40:27.010" endtime="20230609 23:40:27.089"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>Logout</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:27.089" level="INFO">Clicking link 'Logout'.</msg>
-<status status="PASS" starttime="20230609 23:40:27.089" endtime="20230609 23:40:27.737"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:40:30.739" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:40:27.739" endtime="20230609 23:40:30.739"/>
-</kw>
-<status status="PASS" starttime="20230609 23:40:27.010" endtime="20230609 23:40:30.739"/>
+<status status="NOT RUN" starttime="20230620 21:05:20.732" endtime="20230620 21:05:20.732"/>
 </kw>
 <kw name="Closing Browser" library="Commun" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230609 23:40:30.741" endtime="20230609 23:40:37.119"/>
+<status status="PASS" starttime="20230620 21:05:20.732" endtime="20230620 21:05:22.911"/>
 </kw>
-<status status="PASS" starttime="20230609 23:40:30.741" endtime="20230609 23:40:37.119"/>
+<status status="PASS" starttime="20230620 21:05:20.732" endtime="20230620 21:05:22.912"/>
 </kw>
 <tag>decon</tag>
-<status status="PASS" starttime="20230609 23:39:54.566" endtime="20230609 23:40:37.119"/>
+<status status="FAIL" starttime="20230620 21:05:18.072" endtime="20230620 21:05:22.913">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</status>
 </test>
-<test id="s1-t4" name="Admin Page Administration" line="25">
+<test id="s1-s1-t4" name="Admin Page Administration" line="24">
 <kw name="Search User into Administration Page" library="AdminLogic">
 <arg>${USER}</arg>
 <kw name="Connexion" library="HrmLogic">
@@ -273,99 +402,99 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230609 23:40:37.124" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20230609 23:40:37.124" endtime="20230609 23:40:54.787"/>
+<msg timestamp="20230620 21:05:22.913" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230620 21:05:22.913" endtime="20230620 21:05:41.400"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230609 23:40:54.787" endtime="20230609 23:40:54.907"/>
+<status status="PASS" starttime="20230620 21:05:41.400" endtime="20230620 21:05:41.536"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:40:57.908" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:40:54.907" endtime="20230609 23:40:57.908"/>
+<msg timestamp="20230620 21:05:44.595" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:41.536" endtime="20230620 21:05:44.597"/>
 </kw>
-<status status="PASS" starttime="20230609 23:40:37.124" endtime="20230609 23:40:57.908"/>
+<status status="PASS" starttime="20230620 21:05:22.913" endtime="20230620 21:05:44.597"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "Username")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:57.908" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
-<status status="PASS" starttime="20230609 23:40:57.908" endtime="20230609 23:40:58.001"/>
+<msg timestamp="20230620 21:05:44.600" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
+<status status="PASS" starttime="20230620 21:05:44.598" endtime="20230620 21:05:45.489"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:58.002" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20230609 23:40:58.001" endtime="20230609 23:40:58.186"/>
+<msg timestamp="20230620 21:05:45.507" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230620 21:05:45.491" endtime="20230620 21:05:45.718"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:40:58.190" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
-<status status="PASS" starttime="20230609 23:40:58.186" endtime="20230609 23:40:58.360"/>
+<msg timestamp="20230620 21:05:45.721" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
+<status status="PASS" starttime="20230620 21:05:45.719" endtime="20230620 21:05:45.882"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:41:01.360" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:40:58.360" endtime="20230609 23:41:01.360"/>
+<msg timestamp="20230620 21:05:48.889" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:45.883" endtime="20230620 21:05:48.889"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:41:01.360" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20230609 23:41:01.360" endtime="20230609 23:41:02.500"/>
+<msg timestamp="20230620 21:05:48.891" level="INFO">Clicking element 'xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20230620 21:05:48.891" endtime="20230620 21:05:49.966"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:41:05.501" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:41:02.500" endtime="20230609 23:41:05.501"/>
+<msg timestamp="20230620 21:05:52.971" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:49.968" endtime="20230620 21:05:52.971"/>
 </kw>
-<status status="PASS" starttime="20230609 23:40:37.123" endtime="20230609 23:41:05.501"/>
+<status status="PASS" starttime="20230620 21:05:22.913" endtime="20230620 21:05:52.971"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//a[@href="/web/index.php/admin/viewAdminModule"]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230609 23:41:05.501" level="INFO">Clicking link 'xpath=//a[@href="/web/index.php/admin/viewAdminModule"]'.</msg>
-<status status="PASS" starttime="20230609 23:41:05.501" endtime="20230609 23:41:06.406"/>
+<msg timestamp="20230620 21:05:52.971" level="INFO">Clicking link 'xpath=//a[@href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<status status="PASS" starttime="20230620 21:05:52.971" endtime="20230620 21:05:58.321"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:41:09.407" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:41:06.406" endtime="20230609 23:41:09.407"/>
+<msg timestamp="20230620 21:06:01.332" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:05:58.321" endtime="20230620 21:06:01.332"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input</arg>
 <arg>${USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230609 23:41:09.407" level="INFO">Typing text 'Ehioze.Ebo' into text field 'xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input'.</msg>
-<status status="PASS" starttime="20230609 23:41:09.407" endtime="20230609 23:41:09.588"/>
+<msg timestamp="20230620 21:06:01.332" level="INFO">Typing text 'Ehioze.Ebo' into text field 'xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230620 21:06:01.332" endtime="20230620 21:06:01.510"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:41:12.589" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230609 23:41:09.588" endtime="20230609 23:41:12.589"/>
+<msg timestamp="20230620 21:06:04.512" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 21:06:01.511" endtime="20230620 21:06:04.512"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230609 23:41:12.589" level="INFO">Clicking element 'xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]'.</msg>
-<status status="PASS" starttime="20230609 23:41:12.589" endtime="20230609 23:41:12.727"/>
+<msg timestamp="20230620 21:06:04.512" level="INFO">Clicking element 'xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230620 21:06:04.512" endtime="20230620 21:06:04.633"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230609 23:41:17.728" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230609 23:41:12.727" endtime="20230609 23:41:17.728"/>
+<msg timestamp="20230620 21:06:09.642" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230620 21:06:04.633" endtime="20230620 21:06:09.643"/>
 </kw>
-<status status="PASS" starttime="20230609 23:40:37.123" endtime="20230609 23:41:17.728"/>
+<status status="PASS" starttime="20230620 21:05:22.913" endtime="20230620 21:06:09.644"/>
 </kw>
 <kw name="Add a customer on Admin Page" library="AdminLogic">
 <kw name="Connexion" library="HrmLogic">
@@ -378,14 +507,475 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230609 23:41:17.728" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20230609 23:41:17.728" endtime="20230609 23:41:32.993"/>
+<msg timestamp="20230620 21:06:09.648" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg timestamp="20230620 21:06:20.169" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00998810&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955/screenshot</msg>
+<msg timestamp="20230620 21:06:24.272" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x009988B0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955/screenshot</msg>
+<msg timestamp="20230620 21:06:28.358" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00998C10&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955/screenshot</msg>
+<msg timestamp="20230620 21:06:32.407" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49836): Max retries exceeded with url: /session/a60f99bf56671f1e20bf3f252f406955/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03F0FBB0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg timestamp="20230620 21:06:32.407" level="FAIL">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</msg>
+<status status="FAIL" starttime="20230620 21:06:09.648" endtime="20230620 21:06:32.612"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<msg timestamp="20230609 23:41:37.083" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001C54AC70490&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a21327e9e7d431d72249a6d857358208/screenshot</msg>
+<status status="NOT RUN" starttime="20230620 21:06:32.614" endtime="20230620 21:06:32.614"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<status status="FAIL" starttime="20230620 21:06:09.647" endtime="20230620 21:06:32.615"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "Username")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.615" endtime="20230620 21:06:32.615"/>
+</kw>
+<status status="FAIL" starttime="20230620 21:06:09.645" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//a[@href="/web/index.php/admin/viewAdminModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div/div[2]/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "Admin")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.621" endtime="20230620 21:06:32.621"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]/div/div/div[2]/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.627" endtime="20230620 21:06:32.627"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.627" endtime="20230620 21:06:32.627"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "Enabled")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.627" endtime="20230620 21:06:32.628"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.628" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input</arg>
+<arg>${USER_ID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/input</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]/div/div/input</arg>
+<arg>${ROLE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.629"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.629" endtime="20230620 21:06:32.635"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.635" endtime="20230620 21:06:32.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:06:32.636" endtime="20230620 21:06:32.636"/>
+</kw>
+<status status="FAIL" starttime="20230620 21:06:09.644" endtime="20230620 21:06:32.637"/>
+</kw>
+<kw name="Closing Browser" library="Commun" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<msg timestamp="20230620 21:06:38.970" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x009A9E30&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955</msg>
+<msg timestamp="20230620 21:06:43.051" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03F0F690&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955</msg>
+<msg timestamp="20230620 21:06:47.090" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00998A90&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955</msg>
+<status status="PASS" starttime="20230620 21:06:32.637" endtime="20230620 21:06:59.276"/>
+</kw>
+<status status="PASS" starttime="20230620 21:06:32.637" endtime="20230620 21:06:59.276"/>
+</kw>
+<tag>admin</tag>
+<status status="FAIL" starttime="20230620 21:05:22.913" endtime="20230620 21:06:59.277">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</status>
+</test>
+<status status="FAIL" starttime="20230620 21:04:15.819" endtime="20230620 21:06:59.277"/>
+</suite>
+<suite id="s1-s2" name="Newletter" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests\Newletter">
+<suite id="s1-s2-s1" name="New" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests\Newletter\New.robot">
+<test id="s1-s2-s1-t1" name=" Test the app" line="21">
+<kw name="Go to NewLetter Page">
+<arg>${textbox}</arg>
+<kw name="Connexion" library="HrmLogic">
+<arg>${VALID_CREDENTIALS.username}</arg>
+<arg>${VALID_CREDENTIALS.password}</arg>
+<kw name="Open HRM Browser" library="Commun">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230620 21:07:11.498" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230620 21:07:11.498" endtime="20230620 21:07:30.568"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20230620 21:07:30.582" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<msg timestamp="20230620 21:07:30.582" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<status status="FAIL" starttime="20230620 21:07:30.568" endtime="20230620 21:07:30.582"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.582" endtime="20230620 21:07:30.582"/>
+</kw>
+<status status="FAIL" starttime="20230620 21:07:11.498" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "Username")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<status status="FAIL" starttime="20230620 21:07:11.498" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//a[@href="/web/index.php/buzz/viewBuzz"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class=oxd-buzz-post-input</arg>
+<arg>${TextBox}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.597" endtime="20230620 21:07:30.597"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>type=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.613" endtime="20230620 21:07:30.613"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230620 21:07:30.613" endtime="20230620 21:07:30.613"/>
+</kw>
+<status status="FAIL" starttime="20230620 21:07:11.498" endtime="20230620 21:07:30.613"/>
+</kw>
+<tag>test</tag>
+<status status="FAIL" starttime="20230620 21:07:11.498" endtime="20230620 21:07:30.613">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</status>
+</test>
+<status status="FAIL" starttime="20230620 21:06:59.283" endtime="20230620 21:07:30.613"/>
+</suite>
+<status status="FAIL" starttime="20230620 21:06:59.281" endtime="20230620 21:07:30.629"/>
+</suite>
+<status status="FAIL" starttime="20230620 21:04:15.772" endtime="20230620 21:07:30.629"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">admin</stat>
+<stat pass="0" fail="1" skip="0">decon</stat>
+<stat pass="0" fail="1" skip="0">invalid</stat>
+<stat pass="0" fail="1" skip="0">test</stat>
+<stat pass="1" fail="0" skip="0">valid</stat>
+</tag>
+<suite>
+<stat pass="1" fail="4" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="3" skip="0" id="s1-s1" name="Hrm">Tests.Hrm</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Newletter">Tests.Newletter</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s1" name="New">Tests.Newletter.New</stat>
+</suite>
+</statistics>
 <errors>
-<msg timestamp="20230609 23:41:37.083" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001C54AC70490&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a21327e9e7d431d72249a6d857358208/screenshot</msg>
-<msg timestamp="20230609 23:41:41.141" level="ERROR">Execution stopped by user.</msg>
+<msg timestamp="20230620 21:05:15.794" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<msg timestamp="20230620 21:05:20.717" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
+<msg timestamp="20230620 21:06:20.169" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00998810&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955/screenshot</msg>
+<msg timestamp="20230620 21:06:24.272" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x009988B0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955/screenshot</msg>
+<msg timestamp="20230620 21:06:28.358" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00998C10&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955/screenshot</msg>
+<msg timestamp="20230620 21:06:32.407" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49836): Max retries exceeded with url: /session/a60f99bf56671f1e20bf3f252f406955/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03F0FBB0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg timestamp="20230620 21:06:38.970" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x009A9E30&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955</msg>
+<msg timestamp="20230620 21:06:43.051" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03F0F690&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955</msg>
+<msg timestamp="20230620 21:06:47.090" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00998A90&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/a60f99bf56671f1e20bf3f252f406955</msg>
+<msg timestamp="20230620 21:07:30.582" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0060A813+48355]
+	(No symbol) [0x0059C4B1]
+	(No symbol) [0x004A5358]
+	(No symbol) [0x0048D293]
+	(No symbol) [0x004EE37B]
+	(No symbol) [0x004FC473]
+	(No symbol) [0x004EA536]
+	(No symbol) [0x004C82DC]
+	(No symbol) [0x004C93DD]
+	GetHandleVerifier [0x0086AABD+2539405]
+	GetHandleVerifier [0x008AA78F+2800735]
+	GetHandleVerifier [0x008A456C+2775612]
+	GetHandleVerifier [0x006951E0+616112]
+	(No symbol) [0x005A5F8C]
+	(No symbol) [0x005A2328]
+	(No symbol) [0x005A240B]
+	(No symbol) [0x00594FF7]
+	BaseThreadInitThunk [0x75A47D59+25]
+	RtlInitializeExceptionChain [0x7760B74B+107]
+	RtlClearBits [0x7760B6CF+191]
+</msg>
 </errors>
 </robot>

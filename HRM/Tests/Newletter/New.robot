@@ -17,8 +17,7 @@ Go to NewLetter Page
     Click Element     type=submit
     Sleep       3
 
-
 *** Test Cases ***
  Test the app
     [Tags]      test
-    Go to NewLetter Page        ${TextBox}
+    Go to NewLetter Page        ${textbox}
