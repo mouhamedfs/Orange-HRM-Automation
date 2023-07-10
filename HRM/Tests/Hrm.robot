@@ -2,9 +2,7 @@
 Resource           ../Resources/Commun.robot
 Resource           ../Data/Data.robot
 Resource           ../Resources/HrmLogic.robot
-Resource           Administration/AdminLogic.robot
-
-Test Teardown       Closing Browser
+Resource           ../Resources/Pages/AdminLogic.robot
 *** Test Cases ***
 Connexion Successfull
     [Tags]      valid
