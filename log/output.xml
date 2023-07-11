@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20230711 11:06:45.285" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests">
+<suite id="s1-s1" name="Hrm" source="C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests\Hrm.robot">
+<test id="s1-s1-t1" name="Directory test" line="35">
+<kw name="Open HRM Browser" library="Commun" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230711 11:06:45.518" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230711 11:06:45.518" endtime="20230711 11:06:53.391"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230711 11:06:53.391" endtime="20230711 11:06:53.500"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230711 11:06:56.501" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230711 11:06:53.500" endtime="20230711 11:06:56.501"/>
+</kw>
+<status status="PASS" starttime="20230711 11:06:45.518" endtime="20230711 11:06:56.501"/>
+</kw>
+<kw name="Connexion" library="HrmLogic">
+<arg>${INVALID_CREDENTIALS.username}</arg>
+<arg>${VALID_CREDENTIALS.password}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "Username")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230711 11:06:56.501" level="INFO">Clicking element 'xpath: //*[contains(text(), "Username")]'.</msg>
+<status status="PASS" starttime="20230711 11:06:56.501" endtime="20230711 11:06:56.543"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230711 11:06:56.544" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230711 11:06:56.544" endtime="20230711 11:06:56.621"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230711 11:06:56.621" level="INFO">Typing text 'admin123' into text field 'password'.</msg>
+<status status="PASS" starttime="20230711 11:06:56.621" endtime="20230711 11:06:56.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230711 11:06:59.692" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230711 11:06:56.692" endtime="20230711 11:06:59.692"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230711 11:06:59.692" level="INFO">Clicking element 'xpath: //button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230711 11:06:59.692" endtime="20230711 11:07:00.774"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230711 11:07:03.775" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230711 11:07:00.774" endtime="20230711 11:07:03.775"/>
+</kw>
+<status status="PASS" starttime="20230711 11:06:56.501" endtime="20230711 11:07:03.775"/>
+</kw>
+<kw name="Search for an specific user" library="DirectoryPages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath: //a[@class="oxd-main-menu-item active"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230711 11:07:03.776" endtime="20230711 11:07:03.796"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //a[@class="oxd-main-menu-item active"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230711 11:07:03.798" level="INFO">Clicking element 'xpath: //a[@class="oxd-main-menu-item active"]'.</msg>
+<status status="PASS" starttime="20230711 11:07:03.796" endtime="20230711 11:07:04.198"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath: //div[@class="oxd-autocomplete-text-input oxd-autocomplete-text-input--active"]//input</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230711 11:07:09.410" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230711 11:07:09.410" level="FAIL">Element 'xpath: //div[@class="oxd-autocomplete-text-input oxd-autocomplete-text-input--active"]//input' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230711 11:07:04.198" endtime="20230711 11:07:09.412"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //div[@class="oxd-autocomplete-text-input oxd-autocomplete-text-input--active"]//input</arg>
+<arg>Adalwin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230711 11:07:09.413" endtime="20230711 11:07:09.413"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath: //div[@class="oxd-autocomplete-text-input--after"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230711 11:07:09.413" endtime="20230711 11:07:09.413"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //div[@class="oxd-autocomplete-text-input--after"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230711 11:07:09.413" endtime="20230711 11:07:09.413"/>
+</kw>
+<status status="FAIL" starttime="20230711 11:07:03.775" endtime="20230711 11:07:09.413"/>
+</kw>
+<kw name="Closing Browser" library="Commun" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230711 11:07:09.413" endtime="20230711 11:07:15.584"/>
+</kw>
+<status status="PASS" starttime="20230711 11:07:09.413" endtime="20230711 11:07:15.584"/>
+</kw>
+<tag>regression</tag>
+<status status="FAIL" starttime="20230711 11:06:45.518" endtime="20230711 11:07:15.584">Element 'xpath: //div[@class="oxd-autocomplete-text-input oxd-autocomplete-text-input--active"]//input' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230711 11:06:45.328" endtime="20230711 11:07:15.584"/>
+</suite>
+<status status="FAIL" starttime="20230711 11:06:45.288" endtime="20230711 11:07:15.584"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Hrm">Tests.Hrm</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230711 11:06:45.324" level="ERROR">Error in file 'C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation\HRM\Tests' on line 2: Importing library '../Resources/Commun.robot' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\monsh\AppData\Local\JetBrains\Toolbox\apps\PyCharm-P\ch-0\231.9161.41.plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\monsh\Desktop\Automatisation\Orange-HRM-Automation
+  C:\Users\monsh\AppData\Local\JetBrains\Toolbox\apps\PyCharm-P\ch-0\231.9161.41.plugins\robotframework-intellij\lib
+  C:\Users\monsh\AppData\Local\JetBrains\Toolbox\apps\PyCharm-P\ch-0\231.9161.41.plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\monsh\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\monsh\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\monsh\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\monsh\AppData\Local\Programs\Python\Python311
+  C:\Users\monsh\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
