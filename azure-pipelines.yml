@@ -40,4 +40,4 @@ steps:
   displayName: 'Publish Test Results'
   continueOnError: true
   inputs:
-    testResultsFiles: outputxunit.xml
+    testResultsFiles: '**/outputxunit.xml'
