@@ -10,8 +10,8 @@ pool:
 
 strategy:
   matrix:
-    Python311:
-      python.version: '3.11.4'
+    Python37:
+      python.version: '3.7'
   maxParallel: 1
 
 variables:
