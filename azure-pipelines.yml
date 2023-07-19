@@ -10,8 +10,8 @@ pool:
 
 strategy:
   matrix:
-    Python37:
-      python.version: '3.7'
+    Python311:
+      python.version: '3.11.4'
   maxParallel: 1
 
 variables:
@@ -26,7 +26,7 @@ steps:
     versionSpec: '$(python.version)'
     architecture: 'x64'
 
-- script: pip install robotframework robotframework-pabot robotframework-seleniumlibrary webdrivermanager
+- script: pip install robotframework-seleniumlibrary
   displayName: 'Install dependencies'
 
 - powershell: |
