@@ -26,15 +26,10 @@ steps:
     versionSpec: '$(python.version)'
     architecture: 'x64'
 
-- script: pip install robotframework-seleniumlibrary
-  displayName: 'Install dependencies'
-
-- powershell: |
-   Write-Host "Robot Framework tests"
-   robot 'C:\Users\monsh\Desktop\AgiltooAcademy\agiltooAcademy\Tests\.'
-  failOnStderr: true
+- script: |
+    pip install robotframework robotframework-pabot robotframework-seleniumlibrary
+    robot 'C:\Users\monsh\Desktop\AgiltooAcademy\agiltooAcademy\Tests\'
   displayName: 'Run Robot Framework Tests'
-  continueOnError: true
 
 - task: PublishTestResults@2
   displayName: 'Publish Test Results'
